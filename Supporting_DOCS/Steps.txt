@@ -1,0 +1,42 @@
+
+SW1 -> Serial
+SW2 -> Reset
+SW3 -> USB
+
+
+Programing Chip :
+***********************
+
+1. Through ISP (Serial Cable):
+********************************
+The controller enters the bootloader mode if during reset the SW1 pin is low
+
+-> Hold down SW1(isp) and SW2(reset), then release SW2 first and finally SW1
+
+
+KeiluVision4 Settings :
+***************************
+
+Target :
+    ON-CHIP
+    IROM1: 0x0 TO 0x80000
+    
+    IRAM1: 0x40000000 TO 0x8000
+
+Chk pic.
+
+*********************************************************************************************
+2. Through USB (USB) :
+*********************************
+The controller enters the bootloader mode if during reset the SW3 pin is low
+
+
+Hold down SW3 (ISP) and SW2 (RESET), then release SW2 first and finally SW3.
+
+Now the pre-loaded USB bootloader allows you to enumerate the board as a Mass Storage Device.
+
+Drag the compiled binary file and drop onto the device and reset the board using SW2,and the firmware runs.
+
+
+
+fromelf --bin .\BoardLed.axf -o .\BoardLed.bin

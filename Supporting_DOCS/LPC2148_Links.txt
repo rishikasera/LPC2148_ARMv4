@@ -1,0 +1,7 @@
+http://www.nex-robotics.com/lpc2148-development-board/arm7-lpc2148-development-board.html
+
+http://shop.ngxtechnologies.com/product_info.php?products_id=34
+
+http://shop.ngxtechnologies.com/download/header/LPC2148/Blueboard_LPC2148-H_UserManual_Ver1.1.pdf
+
+http://shop.ngxtechnologies.com/download/header/LPC2148/BLUEBOARD-LPC2148H_V2.pdf
